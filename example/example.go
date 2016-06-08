@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/zetamatta/pipeline"
+
+	".."
 )
 
 func main() {

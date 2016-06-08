@@ -8,7 +8,7 @@ package main
 
 import (
     "fmt"
-    "github.com/zetamatta/pipeline"
+    "github.com/zetamatta/go-pipeline"
 )
 
 func main(){
