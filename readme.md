@@ -8,10 +8,11 @@ package main
 
 import (
     "fmt"
+
     "github.com/zetamatta/go-pipeline"
 )
 
-func main(){
+func main() {
     fmt.Println("Start")
     pipeline.Run(func(in, out chan interface{}) {
         for i := 0; i < 10; i++ {
@@ -19,7 +20,7 @@ func main(){
         }
     }, func(in, out chan interface{}) {
         for value := range in {
-            out <- interface{}(value.(int) + 1)
+            out <- value.(int) + 1
         }
     }, func(in, out chan interface{}) {
         for value := range in {

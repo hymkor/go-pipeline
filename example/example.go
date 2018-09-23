@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	".."
+	"github.com/zetamatta/go-pipeline"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 		}
 	}, func(in, out chan interface{}) {
 		for value := range in {
-			out <- interface{}(value.(int) + 1)
+			out <- value.(int) + 1
 		}
 	}, func(in, out chan interface{}) {
 		for value := range in {
