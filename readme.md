@@ -9,7 +9,7 @@ package main
 import (
     "fmt"
 
-    "github.com/zetamatta/go-pipeline"
+    "github.com/hymkor/go-pipeline"
 )
 
 func main() {
